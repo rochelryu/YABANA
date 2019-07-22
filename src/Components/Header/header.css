@@ -1,4 +1,3 @@
-
 @import url(https://fonts.googleapis.com/css?family=Maven+Pro);
 *, *:before, *:after{
     box-sizing: border-box;
@@ -19,7 +18,7 @@ input.search_bar{
     padding: 25px 70px 15px 25px;
     transition: all .3s cubic-bezier(0,0,.5,1.5);
     box-shadow: 0 3px 10px -2px rgba(0,0,0,.1);
-    background: rgb(255, 255, 255) url(https://i.imgur.com/seveWIw.png) no-repeat center center;
+    background: rgb(255, 255, 255) url("../images/logo.png") no-repeat center center;
 }
 input.search_bar:focus{width: 100%; background-position: calc(100% - 35px) center}
 
@@ -57,8 +56,40 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance: none;}
 .dl-menuwrapper li {
     position: relative;
 }
+#info {
+    position: absolute;
+    top: 5px;
+    left: 11%;
+    right: 0;
+    height: 30px;
+}
+#info span{
+    border: none;
+    background-color: #2e0507;
+    padding: 5px 20px;
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+}
+/*#info span:before{
+    border: none;
+    content: '';
+    position: absolute;
+    left: 0;
+    max-width: 10px;
+    top: -2px;
+    bottom: 2px;
+    background-color: #06042e;
+    padding: 5px 20px;
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+}*/
 
 .dl-menuwrapper li a {
+    font-size: 13px;
     display: block;
     position: relative;
     outline: none;
@@ -94,7 +125,7 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance: none;}
     color: white;
 }
 .dl-menu.nav-main-list .nav-main-item{
-    width: 16% !important;
+    width: 24% !important;
 }
 .dl-menuwrapper .dl-menu {
     margin: 0;
@@ -1115,4 +1146,69 @@ h2 > a {
 }
 h2 > a:hover {
     color: #EB7D1D;
+}
+
+
+
+
+
+/*
+Menu of CodePen
+ */
+
+.hamburger {
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    position: relative;
+    width: 44px;
+    margin: 10px auto;
+}
+.hamburger__line {
+    background-color: #ff991b;
+    border-radius: 2px;
+    display: block;
+    height: 4px;
+    position: absolute;
+    transition: all 240ms linear;
+    width: 100%;
+}
+.hamburger__line--top {
+    top: 0%;
+}
+.hamburger__line--middle {
+    top: 50%;
+}
+.hamburger__line--bottom {
+    top: 100%;
+}
+.hamburger:hover .hamburger__line--top {
+    transform: translateY(-2px);
+}
+.hamburger:hover .hamburger__line--bottom {
+    transform: translateY(2px);
+}
+
+.toggle {
+    display: none;
+}
+
+.toggle:checked + .hamburger .hamburger__line--top {
+    transform: translateY(14px) translateX(0px) rotate(225deg);
+}
+.toggle:checked + .hamburger .hamburger__line--middle {
+    opacity: 0;
+}
+.toggle:checked + .hamburger .hamburger__line--bottom {
+    transform: translateY(-14px) translateX(0px) rotate(-225deg);
+}
+.footerHeader{
+    min-height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerHeader .logoHeader{
+    width: 100px;
+    margin-left: -15px;
 }

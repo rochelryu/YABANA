@@ -1,0 +1,169 @@
+@import "../Universal/animate.css" screen;
+
+.my-nodes-enter {
+    opacity: 0;
+}
+.my-nodes-enter-active {
+    opacity: 1;
+    transition: opacity 1000ms;
+}
+.my-nodes-exit {
+    opacity: 1;
+}
+.my-nodes-exit-active {
+    opacity: 0;
+    transition: opacity 1000ms;
+}
+.contentNight .woocommerce2{
+    background: none;
+}
+.woocommerce2{
+    min-height: 100vh;
+    padding-top: 50px;
+    padding-right: 150px;
+    background: #e0e0e05e;
+}
+.woocommerce2 .secondBar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    color: #e0e0e0;
+    width: 150px;
+    margin-bottom: 0px !important;
+    padding-top: 30px;
+    background-color: #fff;
+    box-shadow: 0 10px 10px #ddd;
+}
+.contentNight .woocommerce2 .secondBar{
+    color: #fff;
+    background-color: #000000d1;
+    box-shadow: 0 10px 10px #000000d1;
+}
+.woocommerce2 .contentProfil{
+    min-width: 100%;
+    min-height: 80vh;
+}
+.woocommerce2 .contentProfil .centerOFFLEX{
+    display: flex;
+    min-width: 100%;
+    min-height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+.woocommerce2 .secondBar .header{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+
+}
+.woocommerce2 .secondBar .header img{
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    border: 2px solid #d06f1a;
+    animation: bounce 1s ease-in !important;
+}
+.woocommerce2 .secondBar .ulSecondBar{
+    min-width: 100%;
+    min-height: 100%;
+}
+.woocommerce2 .secondBar .ulSecondBar li{
+    margin: 25px auto;
+    display: flex;
+    transition: all 1s;
+}
+.woocommerce2 .secondBar .ulSecondBar li:hover{
+    color: #d06f1a !important;
+    margin-left: 10px !important;
+    transition: all 1s;
+}
+.contentNight .woocommerce2 .secondBar .ulSecondBar li span{
+    color: #fff !important;
+}
+.woocommerce2 .secondBar .ulSecondBar li:hover span{
+    color: #d06f1a !important;
+}
+.woocommerce2 .secondBar .ulSecondBar li span:first-child{
+    flex: 1;
+    padding: 5px;
+}
+.woocommerce2 .secondBar .ulSecondBar li span:nth-child(2){
+    flex: 6;
+    padding-left: 4px;
+    margin-top: 5px;
+}
+.woocommerce2 .secondBar .ulSecondBar li span:last-child{
+    flex: 1;
+}
+
+/*
+Profil DAsh
+ */
+.homeDash{
+    padding: 50px 20px;
+}
+.homeDash .forMINIDash{
+    display: flex;
+    min-width: 100%;
+    height: 115px;
+    margin-bottom: 30px;
+}
+
+.homeDash .forMINIDash .block4{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    margin: 0 30px;
+    border-radius: 3px 20px 3px 20px;
+    background: #fff !important;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2), 0 6px 6px rgba(255, 255, 255, 0.58);
+}
+.homeDash .forMINIDash .block4 .iconDash{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homeDash .forMINIDash .block4 .bodyDashProp{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.homeDash .forMINIDash .block4 .bodyDashProp h4{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+}
+.homeDash .forMINIDash .block4 .bodyDashProp span{
+    font-size: 31px;
+    color: #d06f1a;
+    font-weight: bold;
+}
+
+.homeDash .forMINIDash .block4 .bodyDashProp p{
+    font-size: 13px;
+    color: #d06f1a;
+    line-height: 1.3em;
+    font-weight: bold;
+}
+/*
+.homeDash .forMINIDash .block4:first-child{
+    background: linear-gradient(90deg, #dfa000,#d06f1a);
+}
+.homeDash .forMINIDash .block4:nth-child(2){
+    background: linear-gradient(270deg, #dfa000,#d06f1a);
+}
+.homeDash .forMINIDash .block4:nth-child(3){
+    background: linear-gradient(360deg, #dfa000,#d06f1a);
+}
+.homeDash .forMINIDash .block4:last-child{
+    background: linear-gradient(180deg, #dfa000,#d06f1a);
+}
+*/

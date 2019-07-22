@@ -1,0 +1,90 @@
+@import '~antd/dist/antd.css';
+
+.setting{
+    display: flex;
+    justify-content: center;
+}
+
+.setting .set{
+    width: 100%;
+    z-index: 2;
+    margin-bottom: 40px;
+}
+
+.setting .set .set1{
+ width: 80%;
+ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+ margin-left: 100px;
+ padding-right: 40px;
+    padding-top: 15px;
+}
+
+.setting .set .set1 .avatar, .setting .set .set2 .avatar{
+    height: 130px;
+    width: 350px;
+    position: relative;
+    left: 15%;
+    
+}
+
+.setting .set .set1 .avatar .avatar-img, .setting .set .set2 .avatar .avatar-img{
+    height: 80%;
+    width: 30%;
+}
+.setting .set .set1 .avatar .avatar-img img, .setting .set .set2 .avatar .avatar-img img{
+    min-width: 100%;
+    min-height: 100%;
+
+}
+
+.setting .set .set1 .avatar .change, .setting .set .set2 .avatar .change{
+    height: 30%;
+    width: 50%;
+    border-radius: 50px;
+    background: rgb(255, 123, 0);
+    left: 12%;
+    position: absolute;
+    bottom: 20%;
+    z-index: -1;
+    border: 1px solid #fff;
+}
+
+.setting .set .set1 .avatar .change p, .setting .set .set2 .avatar .change p{
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.setting .set .set1 .form, .setting .set .set2 .form{
+    margin-top: 40px;
+}
+.setting .set .set2 .ant-input,
+.setting .set .set1 .form .ant-input{
+    height: 45px;
+}
+.setting .set .set2  .valide,
+.setting .set .set1 .form .valide{
+    padding: 15px;
+    width: 250px;
+    background: rgb(255, 123, 0);
+    margin: 40px 150px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border: none;
+    border-radius: 5px;
+}
+
+.setting .set h1{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.setting .set .set2{
+    width: 80%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin-left: 100px;
+    padding-right: 40px;
+    margin-top: 40px;
+    padding-top: 15px;
+
+}
+   

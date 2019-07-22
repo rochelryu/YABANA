@@ -1,13 +1,31 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Aquawax';
+  font-style: normal;
+  font-weight: 200;
+  src: url('fonts/Aquawax/Aquawax Light Trial.ttf') format('truetype');
 }
-
+@font-face {
+  font-family: 'Aubrey';
+  font-style: normal;
+  font-weight: 200;
+  src: url('fonts/Aubrey/AUBREY1__.TTF') format('truetype');
+}
+@font-face {
+  font-family: 'Lexio';
+  font-style: normal;
+  font-weight: 200;
+  src: url('fonts/Lexio/LEIXO-DEMO.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'symply';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/symply/Simply Rounded.ttf') format('truetype');
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+body{
+  font-family: Lexio, Aubrey, Aquawax, "sans-serif";
 }

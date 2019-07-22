@@ -1,0 +1,8 @@
+{
+  "db": {
+    "url": "mongodb://localhost/yabana",
+    "useFindAndModify": false
+  },
+  "port": 8000,
+  "secret": "97207cd7d505f7ff1c4b683437fcae4e8678284415d3aec12921f6dd11138fbfgdytdyjdthssqzqgdsdfhxjf27545634434ihuhiugygufds"
+}

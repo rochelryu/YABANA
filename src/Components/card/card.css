@@ -1,0 +1,262 @@
+
+.card-1{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-contents: center;
+
+}
+.fakeCity{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.fakeCity::before{
+    contents: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    left: -2px;
+    bottom: -2px;
+    background: rgb(255, 102, 0);
+    transform: skew(4deg,4deg);
+}
+
+.fakeCity .contents{
+    position: relative;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.fakeCity .contents .img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.fakeCity .contents .img img{
+    height: 100%;
+    width: 100%;
+}
+
+.fakeCity .contents .detail{
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    height: 35%;
+    padding-top: 10px;
+    bottom: 0;
+    opacity: 0;
+    transition: 1s;
+    visibility: hidden;
+
+}
+
+.fakeCity:hover .contents .detail{
+    visibility: visible;
+    opacity: 1;
+    transform: rotate(-360deg);
+    /* transform: translateY(210px); */
+
+}
+
+.fakeCity .contents .detail .nam{
+    display: flex;
+
+}
+
+.fakeCity .contents .detail .nam .name{
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.fakeCity .contents .detail .like,
+.fakeCity .contents .detail .name{
+    width: 50%;
+    flex-grow: 1;
+
+}
+
+.fakeCity .contents .detail .like ul{
+    display: flex;
+    list-style: none;
+}
+
+.fakeCity .contents .detail .like ul li{
+    margin-right: 3px;
+}
+
+.fakeCity .contents .detail .like ul img{
+    width: 20px;
+    height: 20px;
+}
+
+.fakeCity .contents .detail p{
+    text-align: center;
+    line-height: 23px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+
+.fakeCity .contents .detail .detail-plus{
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.fakeCity .contents .detail .plus{
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.fakeCity .contents .detail .plus .voir,
+.fakeCity .contents .detail .plus .panier{
+    flex-grow: 1;
+    width: 50%;
+    height: 40px;
+
+}
+
+.fakeCity .contents .price{
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    background: rgb(255, 102, 0);
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    display: flex;
+    align-items: center;
+    justify-contents: center;
+    color: #fff;
+
+}
+
+.fakeCity .contents .price p{
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+.card-2{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-contents: center;
+
+}
+
+.card-2 .box{
+    height: 450px;
+    width: 300px;
+
+    position: relative;
+    display: flex;
+    justify-contents: center;
+
+}
+
+.round{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 1px #fff;
+    text-align: center;
+
+}
+
+.round img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.card-2 .box:hover .round img{
+    transform: scale(1.01);
+}
+
+
+.round::before{
+    contents: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 102, 0);
+    transform: rotate(-45deg);
+    z-index: -1;
+    border-radius: 5px;
+}
+
+
+.contents{
+    position: absolute;
+    bottom: 0;
+    height: 180px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 5px;
+
+}
+.contents .see,
+.contents .nam{
+    display: flex;
+
+}
+
+.contents .nam{
+    margin-top: 15px;
+}
+
+.contents .nam p{
+    text-align: center;
+}
+
+.contents .see .voir,
+.contents .see .detail,
+.contents .nam .name,
+.contents .nam .price{
+    flex-grow: 1;
+    width: 50%;
+}
+
+.contents .desc{
+    margin-top: 15px;
+}
+
+.contents .desc p{
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.contents .star{
+    height: 40px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.contents .star ul{
+    display: flex;
+    align-items: center;
+    justify-contents: center;
+    list-style: none;
+}
+
+.contents .star ul img{
+    height: 20px;
+    width: 20px;
+}
+
+.contents .see .voir,
+.contents .see .detail {
+    display: flex;
+    justify-contents: center;
+}
