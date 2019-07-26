@@ -68,9 +68,9 @@ class BidScreen extends React.Component{
                             </div>
                             <div className="col-sm-12 col-lg-6 offset-lg-1">
                                 <div className="hero-banner__content">
-                                    <h4>Product Name</h4>
-                                    <h1>Product catalog_name ainsi que type_name</h1>
-                                    <p>product benefit_lit</p>
+                                    <h4>ERKTOP</h4>
+                                    <h1> Canapé 2 Places</h1>
+                                    <p>Canapé confort avec extension matelat injectable. Ideal pour les revers de la maison. Il offre une paisible position pour la visualisation de media screen. Moelle Noir Janté</p>
                                     <Link className="button-hero" to={"enchered/"+24}>Pariciper</Link>
                                 </div>
                             </div>
