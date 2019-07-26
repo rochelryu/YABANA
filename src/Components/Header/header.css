@@ -909,6 +909,19 @@ All this is done for any sub-level being entered.
     content: '';
 }
 
+
+.ant-menu{
+    width: 150px;
+}
+
+
+
+
+/*
+-------------------esther--------------------
+pour le logo
+*/
+
 /* #3: CSS added for override at widths above mobile menu
 --------------------------------------------------------- */
 @media only screen and (min-width: 801px) {
@@ -1203,10 +1216,10 @@ Menu of CodePen
     transform: translateY(-14px) translateX(0px) rotate(-225deg);
 }
 .footerHeader{
-    min-height: 60%;
+    height: 30%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 .footerHeader .logoHeader{
     width: 100px;

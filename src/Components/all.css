@@ -377,3 +377,59 @@ flex: 1;
 
 
 
+@media only screen and (max-width:1400px){
+  .brush .brushBody h5{
+    font-size: 14px;
+  }
+  .brush .brushBody p{
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width:900px){
+  
+  .brush .brushBody{
+    width: 60%;
+  }
+
+  .brush .brushBody h5{
+    font-size: 12px;
+  }
+  .brush .brushBody p{
+    font-size: 10px;
+  }
+
+}
+
+@media only screen and (max-width:799px){
+  .brush{
+    width: 100px;
+    height: 100px;
+  }
+
+  .brush .brushBody{
+    width: 100%;
+    padding-top: 5px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .ligne{
+    padding: 10px 50px 10px 0;
+  }
+}
+
+@media only screen and (max-width:650px) {
+  .ligne{
+    height: 310px;
+  }
+
+  .blockDe4{
+    width: 50%;
+  }
+
+
+  .brush .brushBody{
+    margin-top: 5px;
+  }
+}

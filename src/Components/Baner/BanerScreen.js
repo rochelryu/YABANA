@@ -11,40 +11,33 @@ export default class BanerScreen extends React.Component {
         this.face = "";
         this.shiftLe = this.shiftLe.bind(this);
         this.shiftRi = this.shiftRi.bind(this);
-        this.auto = this.auto.bind(this);
     }
     componentWillMount() {
-        this.setState({pub: ["https://image.freepik.com/vecteurs-libre/belle-eid-mubarak-islamique-colore_1055-6729.jpg","https://image.freepik.com/psd-gratuit/modele-banniere-pour-festival-ete_23-2148174536.jpg","https://image.freepik.com/vecteurs-libre/modele-affiche-festival-musique_23-2148086131.jpg", "https://image.freepik.com/vecteurs-libre/fond-noir-grunge-vente-vendredi_63801-49.jpg", "https://image.freepik.com/vecteurs-libre/modele-banniere-magasin-mode_1361-1248.jpg", "https://image.freepik.com/vecteurs-libre/modele-affiche-evenement-musique-formes-abstraites_1361-1316.jpg", "https://image.freepik.com/vecteurs-libre/nouveau-modele-banniere-saison_1361-1221.jpg"]})
+        this.setState({pub: ["https://image.freepik.com/vecteurs-libre/belle-eid-mubarak-islamique-colore_1055-6729.jpg","https://image.freepik.com/psd-gratuit/modele-banniere-pour-festival-ete_23-2148174536.jpg","https://image.freepik.com/vecteurs-libre/modele-affiche-festival-musique_23-2148086131.jpg", "https://image.freepik.com/vecteurs-libre/fond-noir-grunge-vente-vendredi_63801-49.jpg", "https://image.freepik.com/vecteurs-libre/modele-banniere-magasin-mode_1361-1248.jpg", "https://image.freepik.com/vecteurs-libre/modele-affiche-evenement-musique-formes-abstraites_1361-1316.jpg", "https://image.freepik.com/vecteurs-libre/salle-ensoleillee-bureau-maison-interieur-3d-realiste-meubles-simples-blancs-3d-ordinateur-portable-ecran-blanc-bureau-etagere-mur-bleu-support-illustration-horloge-pots-fleurs_1441-3439.jpg"]})
     }
     shiftLe(){
-        clearInterval(this.face)
+        //clearInterval(this.face)
         shiftLeft();
-        this.face = setInterval(()=>{
+       /* this.face = setInterval(()=>{
             shiftRight();
-        },5000)
-    }
-    auto(){
-        setTimeout(()=>{
-            console.log("auto");
-        },5000)
+        },5000)*/
     }
     shiftRi(){
-        clearInterval(this.face)
+        //clearInterval(this.face)
         shiftRight();
-        this.face = setInterval(()=>{
+        /*this.face = setInterval(()=>{
             shiftRight();
-        },5000)
+        },5000)*/
     }
 
-    componentDidMount() {
-        console.log("go")
+    /*componentDidMount() {
        this.face = setInterval(()=>{
             shiftRight();
         },5000)
         return this.face;
-    }
+    }*/
     componentWillUnmount() {
-        console.log("end")
+        //console.log("end")
 
         return clearInterval(this.face);
 

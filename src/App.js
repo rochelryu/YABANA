@@ -64,7 +64,7 @@ class App extends React.Component{
   }
 
   render() {
-    const pp = (this.state.searchText) ? {paddingLeft:127}:{paddingLeft:50}
+    const pp = (this.state.searchText) ? {paddingLeft:150}:{paddingLeft:80}
     const theme = (6 <= new Date().getHours() && new Date().getHours() <= 18) ? "content" : "contentNight";
     const who = (6 <= new Date().getHours() && new Date().getHours() <= 18) ? "woocommerce" : "woocommerce veille";
     return (

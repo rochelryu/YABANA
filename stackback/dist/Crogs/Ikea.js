@@ -138,7 +138,6 @@ class Ikea {
         return __awaiter(this, void 0, void 0, function* () {
             yield Produit_1.Produit.findOne({ ident: attribut.id }).then((result) => __awaiter(this, void 0, void 0, function* () {
                 if (result !== null) {
-                    console.log("non vide", result);
                     return result;
                 }
                 else {
@@ -160,6 +159,7 @@ class Ikea {
                     tcheck.souscategorie = "0";
                     const product = new Produit_1.Produit(tcheck);
                     yield product.save().then((resss) => {
+                        console.log("save !!");
                         return resss;
                     }).catch((errr) => console.log("pas enregistré", errr));
                 }
@@ -167,16 +167,17 @@ class Ikea {
         });
     }
     ikeaSearch(keyword, min, max) {
-        let urls = "https://w102a21be.api.esales.apptus.cloud/api/v1/panels/product-search?sessionKey=02d69495-62a5-49bb-3f53-895dc1d83ed6&customerKey=10b6c815-0184-41fa-3365-5329c3d125bc&market=FRFR&arg.window_first=" + min + "&arg.window_last=" + max + "&arg.search_phrase=" + keyword + "%C3%A9&arg.sort_by=relevance%20desc&arg.catalog_root=category_catalog_frfr%3A%27root%27&arg.catalog_filter=type%3A%27functional%27%20OR%20type%3A%27products%27&arg.nr_catalog_categories=3&arg.locale=fr_FR&arg.filter=market%3A%27FRFR%27";
+        let urls = "https://w102a21be.api.esales.apptus.cloud/api/v1/panels/product-search?sessionKey=d3b941ce-151d-48fc-3ac7-5f72ab5acd06&customerKey=e29d2809-caa9-4542-8705-ff9f445ce13c&market=FRFR&arg.window_first=" + min + "&arg.window_last=" + max + "&arg.search_phrase=" + keyword + "&arg.sort_by=relevance%20desc&arg.catalog_root=category_catalog_frfr%3A%27root%27&arg.catalog_filter=type%3A%27functional%27%20OR%20type%3A%27products%27&arg.nr_catalog_categories=3&arg.locale=fr_FR&arg.filter=market%3A%27FRFR%27";
+        console.log(urls);
         const search = '.*' + keyword + '.*';
         return new Promise((next) => __awaiter(this, void 0, void 0, function* () {
             yield Produit_1.Produit.find({ $or: [{ "type_name": { '$regex': search } }, { "catalog_name": { '$regex': search } }] }).then((ress) => __awaiter(this, void 0, void 0, function* () {
-                if (ress.length >= 20) {
+                if (ress.length >= 6) {
                     console.log("il y a res", ress.length);
                     next(ress);
                 }
                 else {
-                    console.log("il n'y a pas de ress", ress);
+                    console.log("il n'y a pas de ress", ress.length);
                     let ell = [];
                     try {
                         yield fetch(urls)

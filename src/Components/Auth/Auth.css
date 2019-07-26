@@ -14,7 +14,7 @@
     align-items: center;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
-    height: 110vh;
+    height: 100vh;
     padding-bottom: 20px;
 }
 
@@ -292,4 +292,108 @@
 
 .Auth .icongmail {
     color: red;
+}
+
+
+
+@media only screen and (max-width:2500px){
+    .Auth{
+        padding-bottom: 350px;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .Auth .container{
+        width: 750px;
+        min-height: 450px;
+    }
+
+    .Auth span h5{
+        font-size: 12px;
+    }
+
+    .Auth button{
+        padding: 12px 45px;
+    }
+}
+
+@media only screen and (max-width:990px){
+
+    .Auth{
+        padding: 0 20px 350px 20px;
+    }
+    .Auth input{
+        font-size: 13px;
+    }
+
+    .Auth a{
+        font-size: 10px;
+    }
+
+    .custom-control-label{
+        font-size: 11px;
+        margin-top: 4px;
+    }
+
+    .Auth button{
+        padding: 10px 15px;
+    }
+}
+
+@media only screen and (max-width:696px){
+
+    .Auth .container{
+        min-height: 400px;
+    }
+    .Auth .social-container .social{
+        height: 20px;
+        width: 20px;
+        padding-bottom: 5px;
+
+    }
+    .Auth .ParentInp input{
+        font-size: 8px;
+    }
+
+
+    .Auth .ForConnect{
+        padding: 0 0 0 10px;
+    }
+
+    .Auth button{
+        font-size: 9px;
+    }
+
+    .Auth .ForInsc{
+        padding: 0 30px;
+    }
+
+    .Auth .ForInsc h5{
+        font-size: 10px;
+    }
+
+    .Auth span h5{
+        font-size: 10px;
+    }
+    .Auth p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .Auth a{
+        font-size: 7px;
+    }
+
+    .Auth h1{
+        font-size: 25px;
+    }
+
+    .custom-control-label{
+        font-size: 8px;
+        margin-top: 8px;
+    }
+}
+
+@media only screen and (max-width:542px){
+    
 }

@@ -6191,3 +6191,59 @@ PODUCT DASHBOARD USER
     font-size: 18px;
     margin: 0 !important;
 }
+
+
+/*
+-----------------------------------------------
+*/
+
+@media only screen and (max-width:1199px) {
+    .hei .boxe .prd {
+        width:200px;
+    }
+
+    .hei .boxe .cont .price{
+        font-size: 14px;
+        right: 20%;
+        padding: 10px 15px;
+        top: 55%;
+    }
+
+    .hei .boxe .cont p{
+        font-size: 12px;
+        text-align: center;
+    }
+    
+}
+
+
+@media only screen and (max-width:991px){
+    .hei .boxe{
+        padding: 0 10px 0 150px;
+    }
+
+    .hei .boxe .prd{
+        width: 150px;
+    }
+
+    .hei .boxe .cont .price{
+        top: 70%;
+        padding: 4px 10px;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:560px){
+    .hei .boxe .cont p{
+        font-size: 10px;
+    }
+
+    .hei .boxe .prd{
+        top: 15%;
+        bottom: 15%;
+    }
+
+    .hei .boxe .cont{
+        padding: 20px 5px;
+    }
+}

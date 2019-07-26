@@ -88,3 +88,24 @@
 
 }
    
+
+@media only screen and (max-width:1450px){
+    .setting .set .set2  .valide,
+   .setting .set .set1 .form .valide{
+    padding: 15px;
+    width: 150px;
+    background: rgb(255, 123, 0);
+    margin: 40px 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border: none;
+    border-radius: 5px;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .setting .set .set1,
+    .setting .set .set2{
+        margin-left: 50px;
+    }
+
+}

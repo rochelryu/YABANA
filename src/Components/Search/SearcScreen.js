@@ -79,6 +79,7 @@ class SearcScreen extends React.Component{
                 searchEnv:true
             });
             let searchData = await searchItem(this.state.searchText,this.state.cat);
+            console.log(searchData)
             if(searchData.status && !searchData.all.message){
                 if (searchData.all.length > 3){
                     this.setState({

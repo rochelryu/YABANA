@@ -41,13 +41,13 @@ class Setting extends React.Component{
                             </div>
                         </div>
                         <div className="form">
-                            <Row>
-                                <Col className="gutter-row" span={11} offset={1}>
+                        <Row>
+                                <Col className="gutter-row" span={11} offset={1} xs={23} sm={23} md={11} lg={11} xl={11}>
                                     <div className="gutter-box">
                                         <Input placeholder="Nom" value={this.state.name} allowClear/>
                                     </div>
                                 </Col>
-                                <Col className="gutter-row" span={11} offset={1}>
+                                <Col className="gutter-row" span={11} offset={1} xs={23} sm={23} md={11} lg={11} xl={11}>
                                     <div className="gutter-box">
                                         <Input placeholder="Prenom" value={this.state.firstname} allowClear/>
                                     </div>
@@ -55,12 +55,12 @@ class Setting extends React.Component{
                             </Row>
                             <br/>
                             <Row>
-                                <Col className="gutter-row" span={11} offset={1}>
+                                <Col className="gutter-row" span={11} offset={1} xs={23} sm={23} md={11} lg={11} xl={11}>
                                     <div className="gutter-box">
                                         <Input placeholder="Contact" maxLength={8} value={this.state.numero} allowClear />
                                     </div>
                                 </Col>
-                                <Col className="gutter-row" span={11} offset={1}>
+                                <Col className="gutter-row" span={11} offset={1} xs={23} sm={23} md={11} lg={11} xl={11}>
                                     <div className="gutter-box">
                                         <Input placeholder="email" value={this.state.email} allowClear />
                                     </div>

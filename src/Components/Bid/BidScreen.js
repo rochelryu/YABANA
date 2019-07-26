@@ -18,20 +18,24 @@ class BidScreen extends React.Component{
     }
     componentDidMount() {
         this.disconect = setInterval(()=>{
-            this.countDown("2019-07-23T13:09:25.154Z")
+            this.countDown("2019-07-28T13:09:25.154Z")
         },1000)
     }
 //"2019-07-22T13:09:25.154Z"
     countDown(date){
         let momes = new Date(date).getTime() / 1000;
-
         let moment = new Date() / 1000;
-        this.setState({
-            jr:parseInt((momes-moment)/86400,10),
-            hr:parseInt(((momes-moment)%86400)/3600,10),
-            min:parseInt(((momes-moment)%86400)%3600/60,10),
-            sec:parseInt(((momes-moment)%86400)%3600%60,10)
-        })
+        if(parseInt((momes-moment)/86400,10) >=0 && parseInt(((momes-moment)%86400)/3600,10) >=0 && parseInt(((momes-moment)%86400)%3600/60,10) >=0 && parseInt(((momes-moment)%86400)%3600%60,10) >=0){
+            this.setState({
+                jr:parseInt((momes-moment)/86400,10),
+                hr:parseInt(((momes-moment)%86400)/3600,10),
+                min:parseInt(((momes-moment)%86400)%3600/60,10),
+                sec:parseInt(((momes-moment)%86400)%3600%60,10)
+            })
+        }
+        else{
+            clearInterval(this.disconect);
+        }
     }
     componentWillUnmount() {
         clearInterval(this.disconect)
@@ -44,7 +48,7 @@ class BidScreen extends React.Component{
                     <div className="container">
                         <div className="row no-gutters align-items-center pt-60px">
 
-                            <div className="col-5 d-none d-sm-block">
+                            <div className="col-5 col-sm-12 d-none d-sm-block">
                                 <div className="curentBid">
                             <span>
                                 <Icon type="usergroup-delete" style={{marginLeft:5}}/>
@@ -62,7 +66,7 @@ class BidScreen extends React.Component{
                                     <img className="img-fluid" src={'https://www.ikea.com/PIAimages/0443267_PE594242_S5.JPG'} alt="profil" />
                                 </div>
                             </div>
-                            <div className="col-sm-7 col-lg-6 offset-lg-1 pl-4 pl-md-5 pl-lg-0">
+                            <div className="col-sm-12 col-lg-6 offset-lg-1 pl-4 pl-md-5 pl-lg-0">
                                 <div className="hero-banner__content">
                                     <h4>Product Name</h4>
                                     <h1>Product catalog_name ainsi que type_name</h1>
@@ -146,42 +150,8 @@ class BidScreen extends React.Component{
                         <div className="row space">
                             <div className="col-lg-9">
                                 <div className="row">
-                                    <div className="col-lg-4 col-md-4 col-sm-6 mb-20">
-                                        <div className="single-related-product d-flex">
-                                            <a href="#"><img src={require('../images/client1.jpg')} alt=""/></a>
-                                            <div className="desc">
-                                                <a href="#" className="title">Franck Musah</a>
-                                                <div className="price">
-                                                    <h6>281.000 F cfa</h6>
-                                                    <h6 className="l-through">201.000 F cfa</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-4 col-sm-6 mb-20">
-                                        <div className="single-related-product d-flex">
-                                            <a href="#"><img src={require('../images/client2.jpg')} alt=""/></a>
-                                            <div className="desc">
-                                                <a href="#" className="title">Meda</a>
-                                                <div className="price">
-                                                    <h6>275.000 F cfa</h6>
-                                                    <h6 className="l-through">201.000 F cfa</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-4 col-sm-6 mb-20">
-                                        <div className="single-related-product d-flex">
-                                            <a href="#"><img src={require('../images/client3.jpg')} alt=""/></a>
-                                            <div className="desc">
-                                                <a href="#" className="title">Cesar</a>
-                                                <div className="price">
-                                                    <h6>201.000 F cfa</h6>
-                                                    <h6 className="l-through">181.000 F cfa</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                   
+                                    
                                     <div className="col-lg-4 col-md-4 col-sm-6 mb-20">
                                         <div className="single-related-product d-flex">
                                             <a href="#"><img src={require('../images/client5.jpg')} alt=""/></a>
@@ -248,41 +218,7 @@ class BidScreen extends React.Component{
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-lg-4 col-md-4 col-sm-6 mb-20">
-                                        <div className="single-related-product d-flex">
-                                            <a href="#"><img src={require('../images/client2.jpg')} alt=""/></a>
-                                            <div className="desc">
-                                                <a href="#" className="title">Meda</a>
-                                                <div className="price">
-                                                    <h6>275.000 F cfa</h6>
-                                                    <h6 className="l-through">201.000 F cfa</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-4 col-sm-6 mb-20">
-                                        <div className="single-related-product d-flex">
-                                            <a href="#"><img src={require('../images/client3.jpg')} alt=""/></a>
-                                            <div className="desc">
-                                                <a href="#" className="title">Cesar</a>
-                                                <div className="price">
-                                                    <h6>201.000 F cfa</h6>
-                                                    <h6 className="l-through">181.000 F cfa</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-4 col-sm-6 mb-20">
-                                        <div className="single-related-product d-flex">
-                                            <a href="#"><img src={require('../images/client5.jpg')} alt=""/></a>
-                                            <div className="desc">
-                                                <a href="#" className="title">Ryu</a>
-                                                <div className="price">
-                                                    <h6>191.000 F cfa</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                     <div className="col-lg-4 col-md-4 col-sm-6 mb-20">
                                         <div className="single-related-product d-flex">
                                             <a href="#"><img src={require('../images/client7.jpg')} alt=""/></a>
@@ -324,41 +260,7 @@ class BidScreen extends React.Component{
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-lg-4 col-md-4 col-sm-6 mb-20">
-                                        <div className="single-related-product d-flex">
-                                            <a href="#"><img src={require('../images/client2.jpg')} alt=""/></a>
-                                            <div className="desc">
-                                                <a href="#" className="title">Meda</a>
-                                                <div className="price">
-                                                    <h6>275.000 F cfa</h6>
-                                                    <h6 className="l-through">201.000 F cfa</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-4 col-sm-6 mb-20">
-                                        <div className="single-related-product d-flex">
-                                            <a href="#"><img src={require('../images/client3.jpg')} alt=""/></a>
-                                            <div className="desc">
-                                                <a href="#" className="title">Cesar</a>
-                                                <div className="price">
-                                                    <h6>201.000 F cfa</h6>
-                                                    <h6 className="l-through">181.000 F cfa</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-4 col-sm-6 mb-20">
-                                        <div className="single-related-product d-flex">
-                                            <a href="#"><img src={require('../images/client5.jpg')} alt=""/></a>
-                                            <div className="desc">
-                                                <a href="#" className="title">Ryu</a>
-                                                <div className="price">
-                                                    <h6>191.000 F cfa</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                     <div className="col-lg-4 col-md-4 col-sm-6 mb-20">
                                         <div className="single-related-product d-flex">
                                             <a href="#"><img src={require('../images/client7.jpg')} alt=""/></a>
@@ -438,40 +340,7 @@ class BidScreen extends React.Component{
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-lg-4 col-md-4 col-sm-6 mb-20">
-                                        <div className="single-related-product d-flex">
-                                            <a href="#"><img src={require('../images/client5.jpg')} alt=""/></a>
-                                            <div className="desc">
-                                                <a href="#" className="title">Ryu</a>
-                                                <div className="price">
-                                                    <h6>191.000 F cfa</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-4 col-sm-6 mb-20">
-                                        <div className="single-related-product d-flex">
-                                            <a href="#"><img src={require('../images/client7.jpg')} alt=""/></a>
-                                            <div className="desc">
-                                                <a href="#" className="title">Rochel</a>
-                                                <div className="price">
-                                                    <h6>190.000 F cfa</h6>
-                                                    <h6 className="l-through">150.000 F cfa</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-4 col-sm-6 mb-20">
-                                        <div className="single-related-product d-flex">
-                                            <a href="#"><img src={require('../images/client4.jpg')} alt=""/></a>
-                                            <div className="desc">
-                                                <a href="#" className="title">Kira Hl</a>
-                                                <div className="price">
-                                                    <h6>175.000 F cfa</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                   
                                 </div>
                             </div>
                         </div>

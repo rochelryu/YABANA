@@ -69,23 +69,23 @@ class ProductItem extends React.Component{
                             <div className="post-meta">
                                 <Tooltip placement="bottom" title="Voir Plus">
                                     <Link to={{ pathname: view, search: "?r=r" }}>
-                                    <span className="view" style={{position:"absolute",right:70 + "px", bottom:5+"px"}}>
+                                    <span className="view" style={{position:"absolute",right:5 + "%", bottom:5+"px"}}>
                                     <img src={require("../images/eye.png")} style={{width:30+"px",height:30+"px"}} />
                                     </span>
                                     </Link>
                                 </Tooltip>
                                 <Tooltip placement="bottomRight" title="Ajouter au Panier">
-                                    <span onClick={()=>{this.addpannier(product)}} className="add" style={{position:"absolute",right:25+"px", bottom:5+"px"}}>
+                                    <span onClick={()=>{this.addpannier(product)}} className="add bag" style={{position:"absolute",right:30+"%", bottom:5+"px"}}>
                                     <img src={require("../images/shopping-bags.png")} style={{width:30+"px",height:30+"px"}} />
                                   </span>
                                 </Tooltip>
                                 <Tooltip placement="bottom" title="Comparer">
-                                <span onClick={()=>{this.commpare(product)}} className="add" style={{position:"absolute",right:115+"px", bottom:5+"px"}}>
+                                <span onClick={()=>{this.commpare(product)}} className="add compare" style={{position:"absolute",right:50+"%", bottom:5+"px"}}>
                             <img src={require("../images/comparison.png")} style={{width:30+"px",height:30+"px"}} />
                       </span>
                                 </Tooltip>
                                 <Tooltip placement="bottomLeft" title="Partager">
-                                <span onClick={()=>share(product, view)}  className="add" style={{position:"absolute",right:155+"px", bottom:5+"px"}}>
+                                <span onClick={()=>share(product, view)}  className="add share" style={{position:"absolute",right:80+"%", bottom:5+"px"}}>
                                    <img src={require('../images/share.png')} alt="partager" style={{width:30+"px",height:30+"px"}}/>
                                 </span>
                                 </Tooltip>

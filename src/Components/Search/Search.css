@@ -35,11 +35,10 @@ main.home {
 }
 main.home .logo {
     width: 272px;
-    height: 152px;
+    height: 102px;
     background-repeat: no-repeat;
-    background-image: url("../images/output.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: url('../images/yabana.png');
+    background-size: cover;
     margin: 0 auto;
 }
 main.home .logo:after {
@@ -161,4 +160,23 @@ main.home .button-group {
 .footer li a:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+/*
+-------------------------------media----------------------
+*/
+
+@media only screen and (max-width:750px){
+    main.home .search{
+        width: 310px;
+    }
+
+    main.home{
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    main.home .logo{
+        width: 200px;
+    }
 }

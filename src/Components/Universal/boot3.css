@@ -88,12 +88,14 @@ h6 {
     height: 44px;
     padding: 4px 8px;
     background-color: #36333c;
-    box-shadow: border-box;
+    box-sizing: border-box;
     cursor: pointer;
     z-index: 100;
 
 }
-
+.ant-menu.ant-menu-sub{
+    width: auto;
+}
 .menu-icon span{
     width: 100%;
     height: 4px;
@@ -304,13 +306,7 @@ html {
         font-size: 1rem;
     }
 }
-@media screen and (max-width: 1439px){
 
-    .woocommerce .mystyle-products .product {
-        width: 25% !important;
-
-    }
-}
 /* body {
   color: #3f465e;
   text-rendering: optimizelegibility;
@@ -969,10 +965,7 @@ img.align-center {
     .woocommerce .mystyle-products{
         height: 250px !important;
     }
-    .woocommerce .mystyle-products .product{
-        height: 250px !important;
-        width: 51% !important;
-    }
+    
     .int.head .tit{
         font-size: small !important;
         margin: 0 !important;
@@ -1036,7 +1029,7 @@ section.m-60, section.container{
 }
 /*---------- FIN PANIER ________*/
 
-/*********************************************************************** //sold ********************************************************************************************/
+/*********************************************************************** //sold  rgba(255, 249, 249, 0.767)   ********************************************************************************************/
 /*********************************************************************** tout les barners ********************************************************************************************/
 .baner_01, .baner_02, .baner_03, .baner_04{
     padding: 90px 0px 0px 130px;
@@ -1047,7 +1040,7 @@ section.m-60, section.container{
 
 .info-bulle{
     position: relative;
-    background: rgba(255, 249, 249, 0.767);
+    background: rgba(250, 2, 2, 0.767);
     height: 200px;
     width: 500px;
     top: 30%;
@@ -1629,7 +1622,7 @@ section#pannier{
 }
 
 /*
------------------------- -------------------
+------------------------ rgba(255, 255, 255, 0.37)-------------------
  */
 
 .all{
@@ -2002,13 +1995,13 @@ NEW CARD OF PRODUCT
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
     transition: all 0.3s linear 0s;
 }
-.post-module:hover,
+ .post-module:hover,
 .hover {
     -webkit-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
 }
-.post-module:hover .thumbnail img,
+ .post-module:hover .thumbnail img,
 .hover .thumbnail img {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -2071,7 +2064,7 @@ NEW CARD OF PRODUCT
 }
 .post-module .post-content {
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     background: #FFFFFF;
     white-space: normal;
     width: 100%;
@@ -2083,7 +2076,7 @@ NEW CARD OF PRODUCT
     -moz-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
     -ms-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
     -o-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
-    transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    /* transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s; */
 }
 .post-module .post-content .category {
     position: absolute;
@@ -2113,7 +2106,7 @@ NEW CARD OF PRODUCT
 .post-module .post-content .description {
     transition: all .3s;
     opacity: 0;
-    display: none;
+    display: block;
     color: #666666;
     font-size: 12px;
 }
@@ -2197,4 +2190,213 @@ FOR COMPARE PRODUCT
     font-size: 12px !important;
     position: relative;
     display: block !important;
+}
+
+
+/*
+----------------------------------------------media-----------------------------------------
+*/
+
+@media only screen and (max-width:2500px){
+    .baner_01{
+        height: 40vh;
+    }
+
+    .all .sect p{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:1500px){
+    .woocommerce .mystyle-products .product{
+        width: 19.67%;
+    }
+
+
+/*
+--------------------------baner
+*/
+
+    .all .sect{
+    padding-top: 35%;
+    }
+
+    .all .sect p{
+        font-size: 15px;
+    }
+
+    .all .title{
+        width: 100px;
+    }
+
+
+    .all .title h3{
+        font-size: 12px;
+    }
+
+/*
+--------------------------baner//
+*/    
+}
+
+
+@media only screen and (max-width:1200px){
+    .woocommerce .mystyle-products .product{
+        width: 24.67%;
+        
+    }
+
+/*
+--------------------------baner
+*/
+
+.all{
+    width: 50%;
+}
+
+
+.all .title{
+    height: 30px;
+}
+
+
+.all .sect p{
+    font-size: 12px;
+}
+
+/*
+--------------------------baner//
+*/ 
+
+    
+}
+
+
+@media only screen and (max-width:1200px){
+    .int.head {
+        display: grid;
+    }
+
+    .int.head .tit{
+        font-size: 15px;
+        letter-spacing: 2px;
+        
+    }
+
+    .int.head .more{
+        font-size: 10px;
+    }
+    .p-40{
+        padding: 5px 50px !important;
+    }
+
+
+    .post-content .post-meta span img{
+        height: 25px !important;
+        width: 25px !important;
+    }
+/* 
+    .post-content .post-meta .bag{
+        right: 0% !important;
+    }
+
+    .post-content .post-meta .view{
+        right: 30% !important;
+    }
+
+    .post-content .post-meta .compare{
+        right: 50% !important;
+    }
+
+    .post-content .post-meta .share{
+        right: 80% !important;
+    } */
+}
+
+
+@media only screen and (max-width:990px){
+    .woocommerce .mystyle-products .product{
+        width: 33.67%;
+    }
+}
+
+@media only screen and (max-width:795px){
+    .head.int{
+        justify-content: space-between;
+    }
+
+    .int.head .tit{
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .p-40{
+        padding: 5px 20px !important;
+    }
+
+    /* .post-content .post-meta .bag{
+        right: 0% !important;
+    }
+
+    .post-content .post-meta .view{
+        right: 30% !important;
+    }
+
+    .post-content .post-meta .compare{
+        right: 50% !important;
+    }
+
+    .post-content .post-meta .share{
+        right: 80% !important;
+    } */
+
+}
+
+
+@media only screen and (max-width:760px){
+    .woocommerce .mystyle-products .product{
+        width: 50.67%;
+    }
+
+    .post-module .post-content .category{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:650px){
+
+    .p-40{
+        padding: 5px 20px !important;
+    }
+
+    .baner_01{
+        height: 30vh;
+        padding: 88px 0px 0px 70px;
+    }
+
+    .all{
+        width: 80%;
+    }
+
+    .post-content .post-meta span img{
+        height: 20px !important;
+        width: 20px !important;
+    }
+
+    /* .post-content .post-meta .bag{
+        right: 0% !important;
+    }
+
+    .post-content .post-meta .view{
+        right: 30% !important;
+    }
+
+    .post-content .post-meta .compare{
+        right: 50% !important;
+    }
+
+    .post-content .post-meta .share{
+        right: 80% !important;
+    } */
+ 
 }

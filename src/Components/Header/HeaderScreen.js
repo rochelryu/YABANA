@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../images/logo1.png';
+import logo from '../images/logo_yabana.png';
 import './header.css'
 import { Menu, Icon, Badge } from 'antd';
 import {Link} from "react-router-dom";
@@ -147,7 +147,7 @@ class HeaderScreen extends React.Component {
         const bg = (6 <= new Date().getHours() && new Date().getHours() <= 18) ? "#fff" : "#001529";
         const { pannierProduct } = this.props;
         return (
-            <div style={{position:"fixed", bottom:0,left:0, backgroundColor:bg, top:0, zIndex:999999}}>
+            <div style={{position:"fixed", bottom:0,left:0, backgroundColor:bg, top:0, zIndex:999999, height:100+"vh "}}>
                 <input type="checkbox" id="h-icon" className="toggle"/>
                 <label onClick={this.toggleCollapsed} htmlFor="h-icon" className="hamburger">
                     <span className="hamburger__line hamburger__line--top"></span>
