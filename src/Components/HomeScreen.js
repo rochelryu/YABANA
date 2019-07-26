@@ -172,6 +172,7 @@ class HomeScreen extends React.Component{
         return clearInterval(this.face);
     }
     render() {
+        const fake = Math.floor(Math.random()*2)
         if(this.state.isReady){
             const {compareProduct, openModalCompare} = this.props
             return(
@@ -211,10 +212,10 @@ class HomeScreen extends React.Component{
                                         <img src={require('./images/yababaBoot.png')} className="imgTchat" alt="focus"/>
                                     </div>
                                     <div className="col-xs-9 team-info">
-                                        <p>{messageBoot[this.tchatLevel+2].salutation}{messageBoot[this.tchatLevel+2].text}</p>
+                                        <p>{messageBoot[this.tchatLevel+fake].salutation}{messageBoot[this.tchatLevel+fake].text}</p>
                                         <div className="timesTchat" align="right">
                                             <small>
-                                                {messageBoot[this.tchatLevel+2].date}
+                                                {messageBoot[this.tchatLevel+fake].date}
                                             </small>
                                         </div>
                                     </div>

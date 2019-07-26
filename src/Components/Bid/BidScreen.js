@@ -18,7 +18,7 @@ class BidScreen extends React.Component{
     }
     componentDidMount() {
         this.disconect = setInterval(()=>{
-            this.countDown("2019-07-28T13:09:25.154Z")
+            this.countDown("2019-07-29T13:09:25.154Z")
         },1000)
     }
 //"2019-07-22T13:09:25.154Z"
@@ -48,7 +48,7 @@ class BidScreen extends React.Component{
                     <div className="container">
                         <div className="row no-gutters align-items-center pt-60px">
 
-                            <div className="col-5 col-sm-12 d-none d-sm-block">
+                            <div className="col-lg-5 col-sm-12 d-none d-sm-block">
                                 <div className="curentBid">
                             <span>
                                 <Icon type="usergroup-delete" style={{marginLeft:5}}/>
@@ -66,7 +66,7 @@ class BidScreen extends React.Component{
                                     <img className="img-fluid" src={'https://www.ikea.com/PIAimages/0443267_PE594242_S5.JPG'} alt="profil" />
                                 </div>
                             </div>
-                            <div className="col-sm-12 col-lg-6 offset-lg-1 pl-4 pl-md-5 pl-lg-0">
+                            <div className="col-sm-12 col-lg-6 offset-lg-1">
                                 <div className="hero-banner__content">
                                     <h4>Product Name</h4>
                                     <h1>Product catalog_name ainsi que type_name</h1>
@@ -83,14 +83,14 @@ class BidScreen extends React.Component{
                             <div className="col-lg-6 no-padding exclusive-left">
                                 <div className="row clock_sec clockdiv" id="clockdiv">
                                     <div className="col-lg-12">
-                                        <h1>Exclusive Hot Deal Ends Soon!</h1>
-                                        <p>Who are in extremely love with eco friendly system.</p>
+                                        <h1>Exclusivité à YABANA !!! </h1>
+                                        <p>Il ne vous reste que</p>
                                     </div>
                                     <div className="col-lg-12">
                                         <div className="row clock-wrap">
                                             <div className="col clockinner1 clockinner">
                                                 <h1 className="days">{this.state.jr}</h1>
-                                                <span className="smalltext">Jour</span>
+                                                <span className="smalltext">Jours</span>
                                             </div>
                                             <div className="col clockinner clockinner1">
                                                 <h1 className="hours">{this.state.hr}</h1>
@@ -124,14 +124,43 @@ class BidScreen extends React.Component{
                                                     <h6>250.000 F cfa</h6>
                                                     <h6 className="l-through">210.000 F cfa</h6>
                                                 </div>
-                                                <h6>addidas New Hammer sole
-                                                    for Sports person</h6>
+                                                <h6>ThômasFERE | en Polaine | 3 places</h6>
                                                 <div
                                                     className="add-bag d-flex align-items-center justify-content-center">
                                                     <Link to={"/enchered/"+1} className="add-btn" href=""><span className="ti-bag"><Icon type="usergroup-add" /></span></Link>
                                                     <Link to={"/enchered/"+1} ><span className="add-text text-uppercase">Participer</span></Link>
                                                 </div>
                                             </div>
+                                    </li>
+                                    <li className="single-exclusive-slider">
+                                        <img className="img-fluid" src={'https://www.ikea.com/PIAimages/0386583_PE559163_S5.JPG'} alt="profil" />
+                                        <div className="product-details">
+                                            <div className="price">
+                                                <h6>350.000 F cfa</h6>
+                                                <h6 className="l-through">280.000 F cfa</h6>
+                                            </div>
+                                            <h6>Erktop | Moelle Noir Janté | 2 places</h6>
+                                            <div
+                                                className="add-bag d-flex align-items-center justify-content-center">
+                                                <Link to={"/enchered/"+1} className="add-btn" href=""><span className="ti-bag"><Icon type="usergroup-add" /></span></Link>
+                                                <Link to={"/enchered/"+1} ><span className="add-text text-uppercase">Participer</span></Link>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li className="single-exclusive-slider">
+                                        <img className="img-fluid" src={'https://www.ikea.com/PIAimages/0724707_PE734589_S5.JPG'} alt="profil" />
+                                        <div className="product-details">
+                                            <div className="price">
+                                                <h6>450.000 F cfa</h6>
+                                                <h6 className="l-through">250.000 F cfa</h6>
+                                            </div>
+                                            <h6>MARKUS | Tissus & Ventouse</h6>
+                                            <div
+                                                className="add-bag d-flex align-items-center justify-content-center">
+                                                <Link to={"/enchered/"+1} className="add-btn" href=""><span className="ti-bag"><Icon type="usergroup-add" /></span></Link>
+                                                <Link to={"/enchered/"+1} ><span className="add-text text-uppercase">Participer</span></Link>
+                                            </div>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
@@ -200,7 +229,7 @@ class BidScreen extends React.Component{
                             <div className="col-lg-3">
                                 <div className="ctg-right">
                                     <a href="#" target="_blank">
-                                        <img className="img-fluid d-block mx-auto" src={'https://www.ikea.com/PIAimages/0443267_PE594242_S5.JPG'} alt=""/>
+                                        <img className="img-fluid d-block mx-auto" src={'https://www.ikea.com/PIAimages/0724707_PE734589_S5.JPG'} alt=""/>
                                     </a>
                                 </div>
                             </div>
@@ -289,16 +318,16 @@ class BidScreen extends React.Component{
                             <div className="col-lg-3">
                                 <div className="ctg-right">
                                     <a href="#" target="_blank">
-                                        <img className="img-fluid d-block mx-auto" src={'https://www.ikea.com/PIAimages/0443267_PE594242_S5.JPG'} alt=""/>
+                                        <img className="img-fluid d-block mx-auto" src={'https://www.ikea.com/PIAimages/0458049_PE605379_S5.JPG'} alt=""/>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div className="row space2">
+                       {/* <div className="row space2">
                             <div className="col-lg-3">
                                 <div className="ctg-right">
                                     <a href="#" target="_blank">
-                                        <img className="img-fluid d-block mx-auto" src={'https://www.ikea.com/PIAimages/0443267_PE594242_S5.JPG'} alt=""/>
+                                        <img className="img-fluid d-block mx-auto" src={'https://www.ikea.com/PIAimages/0458049_PE605379_S5.JPG'} alt=""/>
                                     </a>
                                 </div>
                             </div>
@@ -343,7 +372,7 @@ class BidScreen extends React.Component{
                                    
                                 </div>
                             </div>
-                        </div>
+                        </div>*/}
                     </div>
                 </section>
             </div>

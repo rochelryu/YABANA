@@ -2199,7 +2199,7 @@ FOR COMPARE PRODUCT
 
 @media only screen and (max-width:2500px){
     .baner_01{
-        height: 40vh;
+        height: 55vh;
     }
 
     .all .sect p{
@@ -2209,7 +2209,7 @@ FOR COMPARE PRODUCT
 
 @media only screen and (max-width:1500px){
     .woocommerce .mystyle-products .product{
-        width: 19.67%;
+        width: 25%;
     }
 
 

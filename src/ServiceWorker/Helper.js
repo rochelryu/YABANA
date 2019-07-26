@@ -1,6 +1,6 @@
 import axios from 'axios';
 import decode from 'jwt-decode'
-const baseUrl = "http://192.168.50.115:8000/";
+const baseUrl = "http://localhost:8000/";
 
 export async function all() {
     let ell = [];
