@@ -33,6 +33,7 @@ class HomeScreen extends React.Component{
         }
         this.face = "";
         this.afficheTchat = this.afficheTchat.bind(this);
+        this.removesCompare = this.removesCompare.bind(this);
         this.level = 0;
         this.tchatBeg = 0;
         this.tchatLevel = localStorage.getItem("bootLevel") ? parseInt(localStorage.getItem("bootLevel"),10):0
@@ -43,8 +44,9 @@ class HomeScreen extends React.Component{
             modalIsOpen: false,
         });
     };
-
-
+    removesCompare(){
+        this.props.removeCompare();
+    }
     onClose = () => {
         this.props.hideCompare();
     };
@@ -289,7 +291,7 @@ class HomeScreen extends React.Component{
                             </ul>)}
                         </div>
                         <div className="clearCompare">
-                            <button className="Vider">Vider</button>
+                            <button onClick={()=>this.removesCompare()} className="Vider">Vider</button>
                         </div>
                     </Drawer>
                 </div>
@@ -312,6 +314,9 @@ const mapDispatchToProps = (dispatch) =>{
     return {
         hideCompare:()=>{
             dispatch({type:types.HIDE_COMPARE})
+        },
+        removeCompare:()=>{
+            dispatch({type:types.REMOVE_COMPARE})
         }
     }
 }

@@ -26,6 +26,13 @@ const CompareReducer = (state=initState,action)=> {
                 openModalCompare:false,
             }
             break;
+        case types.REMOVE_COMPARE:
+            return {
+                ...state,
+                openModalCompare:false,
+                compareProduct:[]
+            }
+
         default:
             return state;
     }
