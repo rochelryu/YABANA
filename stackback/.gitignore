@@ -3,6 +3,8 @@
 # dependencies
 /node_modules
 /stackback/node_modules
+./node_modules
+./stackback/node_modules
 /.pnp
 .pnp.js
 
